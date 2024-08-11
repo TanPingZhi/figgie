@@ -41,7 +41,7 @@ def figgie_odds(diamonds, clubs, hearts, spades):
             print(f'(BUY2WIN;  {quantity_to_buy} @ ${expected_cost_each})', end=' ') # if you want to buy for the majority win
 
         if values[idx] >= 6:
-            keep_value = round(goal_odds[idx] * 100, 2)
+            keep_value = round(goal_odds[idx] * (100 + values[idx] * 10), 2)
             print(f'(WIN Keep value: {keep_value})')
 
         else:
