@@ -7,7 +7,6 @@ def figgie_odds(diamonds, clubs, hearts, spades):
     # set to remove duplicates of two 10s
     permutations = sorted(list(set(itertools.permutations([12, 10, 10, 8]))))
     values = [spades, clubs, diamonds, hearts]
-    # suits = ['♦', '♣', '♥', '♠']
     suits = ['♠', '♣', '♦', '♥',]
 
     odds = [] # odds[i] = odds that suits[i] is the 12 suit
